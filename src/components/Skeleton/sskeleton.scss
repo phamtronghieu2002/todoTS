@@ -1,0 +1,32 @@
+.skeleton_container {
+  .placeholder {
+    position: relative;
+    background: #ccc;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .placeholder:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100px;
+    left: -100px;
+    top: 0;
+    background: linear-gradient(to right, transparent, #ffffff70, transparent);
+    animation: reflect 800ms ease-out infinite;
+  }
+
+  .skeleton-item {
+
+    min-height: 300px;
+    margin-bottom: 10px;
+  }
+
+
+  @keyframes reflect {
+    to {
+      left: calc(100% + 100px);
+    }
+  }
+}

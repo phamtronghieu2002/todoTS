@@ -1,0 +1,87 @@
+@import url("./reset.scss");
+html[theme='dark']:root {
+    --main-text-color-hover: #6f8bff;
+    --main-text-color-dark: #ced2da;
+    --theme-bg-item: #151515;
+    --theme-bg: #2b2b2b;
+    --theme-icon-bg: #66666620;
+    --theme-icon-shadow: var(--ds-shadow-overlay, 0 1px 1px 1px #50505040, 0 0 0 0px #2a2a2a14);
+    --boder-layout: #4544445f;
+    --bur-bg: rgba(77, 77, 77, 0.2);
+    --test-element-color: #dedfe685;
+    --drag-element-color: #464646;
+    --theme-bg-item-area-focus: #3b3b3b;
+}
+:root{
+    --icon-opacity: #c3cada;
+    --main-text-color: #768aad;
+    --boder-size: 1.3px;
+    --header-height: 60px;
+    --sidebar-bg: #f7f8fa;
+    --sidebar-width: 70px;
+    --taboption--width: 280px;
+    --opacity-bg: #000000a3;
+    --opacity-hover: 0.8;
+    --opacity-hover-strong: 0.6;
+    --white: #ffffff;
+    --red: rgb(255, 0, 0);
+    --work-card-bg: #ebecf0;
+    --content-box-color: rgba(179, 179, 179, 0.2);
+    --done-color: #2acb3d;
+    --review-color: #ffc931;
+    --in-work-color: #2fbeff;
+    --todo-color: #8833ff;
+    --content-box-hover: rgba(179, 179, 179, 0.466);
+    --input-shadow: rgba(0, 0, 0, 0.35) 0px 1px 5px;
+    --box-shadow: var(--ds-shadow-overlay, 0 1px 1px 1px #b1b1b140, 0 0 0 0px #94949414);
+    --bottom-shadow: 0 4px 0px -2px var(--main-text-color-hover);
+}
+.row{
+    --bs-gutter-x: 0.5rem;
+}
+*{
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --animate-duration: 0.3s;
+    transition: width 2s;
+}
+body{
+    background-color: var(--theme-bg);
+    color: var(--main-text-color) ;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+
+}
+.btn_action{
+    margin: 0 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    margin: 0;
+    opacity: 1;
+    color: var(--icon-opacity);
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--theme-icon-bg);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: var(--theme-icon-shadow);
+    border: 2px solid #3b3b3b;
+
+    &:hover{
+        background-color: var(--theme-bg-item);
+        fill: var(--main-text-color-hover);
+        color: var(--main-text-color-hover);
+        transform: scale(1.2);
+        animation: scale-animate 0.1s linear;
+        /* box-shadow: var(--ds-shadow-overlay, 0 1px 1px 1px #8c8c8c40, 0 0 0 0px #98989814); */
+    }
+
+    
+}

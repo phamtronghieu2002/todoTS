@@ -1,0 +1,30 @@
+.tab_item {
+  position: relative;
+  width: 50%;
+  height: 90px;
+  padding: 25px 0px;
+  cursor: pointer;
+  border: var(--boder-size) solid var(--boder-layout);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--icon-opacity);
+  justify-content: space-between;
+
+  p {
+    font-size: 0.785rem;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+
+  &:hover {
+    z-index: 9999;
+    border-radius: 5px;
+    border: none;
+    transform: scale(1.1);
+    animation: scale-animate 0.1s linear;
+    background-color: var(--theme-bg-item);
+    color: var(--main-text-color-hover);
+  }
+}

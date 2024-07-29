@@ -1,0 +1,36 @@
+.wp_content_to_do{
+
+    flex: 1;
+    padding-top: 10px;
+
+    .wp_content{
+        border-radius: 10px;
+        border: var(--boder-size) solid var(--boder-layout);
+        width: 100%;
+        padding: 5px;
+        align-items: center;
+        position: relative;
+    }
+
+    .header{
+        // padding-left: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5px;
+        border-bottom: var(--boder-size) solid var(--boder-layout);
+            .tab_bar{
+                display: flex;
+                gap: 10px;
+            }
+
+            .actions{
+                display: flex;
+                gap: 10px;
+            }
+    }
+    .content{
+        padding: 4px 18px;
+  
+    }
+
+}

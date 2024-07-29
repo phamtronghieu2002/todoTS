@@ -1,0 +1,21 @@
+{ 
+    "Home":{
+
+        "Header":{
+            "Menus":{
+                "dashboard":"Trang chủ",
+                "aboutUs": "Về chúng tôi",
+                "contactUs": "Liên hệ",
+                "login": "Đăng nhập",
+                "register": "Đăng kí",
+                "logout": "Đăng xuất",
+                "news":"Tin mới",
+                "userPolicy":"Quy Định"
+            }
+          
+        }
+        
+
+    }
+  
+}

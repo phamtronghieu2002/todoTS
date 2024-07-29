@@ -1,0 +1,54 @@
+.wp_sidebar_nav {
+//   padding-top: var(--header-height);
+  justify-content: space-between;
+  top: 0;
+  width: var(--sidebar-width);
+  display: flex;
+  border-right: var(--boder-size) solid var(--boder-layout);
+  background-color: var(--theme-bg);
+  height: 100%;
+  min-height: 100%;
+  z-index: 5;
+  transform: translate3d(0%, 0, 0);
+  transition: transform 100ms ease-in;
+  flex-direction: row;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  .main_actions {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  .icon {
+    fill: var(--icon-opacity);
+    color: var(--icon-opacity);
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--theme-icon-bg);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: var(--theme-icon-shadow);
+
+    &:hover{
+        background-color: var(--theme-bg-item);
+        fill: var(--main-text-color-hover);
+        color: var(--main-text-color-hover);
+        transform: scale(1.2);
+        animation: scale-animate 0.1s linear;
+        box-shadow: var(--ds-shadow-overlay, 0 1px 1px 1px #8c8c8c40, 0 0 0 0px #98989814);
+    
+    }
+  }
+
+  .option_sidebar {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+}

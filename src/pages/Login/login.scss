@@ -1,0 +1,19 @@
+.wp_login_page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .wp_content {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-self: center;
+    }
+  }
+}

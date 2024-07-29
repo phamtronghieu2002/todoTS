@@ -1,0 +1,23 @@
+.tab_bar_item {
+  display: flex;
+  gap: 10px;
+ 
+  color: var(--main-text-color-hover);
+  padding: 0 10px;
+  margin-right: 10px;
+  height: 50px;
+  color: var(--main-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 0.75rem;
+
+  &:hover {
+    color: var(--main-text-color-hover);
+    box-shadow: var(--bottom-shadow);
+    /* border-bottom: var(--boder-size) solid var(--main-text-color-hover); */
+    cursor: pointer;
+  }
+}

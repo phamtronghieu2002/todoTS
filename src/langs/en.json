@@ -1,0 +1,21 @@
+{ 
+    "Home":{
+
+        "Header":{
+            "Menus":{
+                "dashboard":"dashboard",
+                "aboutUs": "aboutUs",
+                "contactUs": "contactUs",
+                "login": "login",
+                "register": "register",
+                "logout": "logout",
+                "news":"New",
+                "userPolicy":"UserPolicy"
+            }
+          
+        }
+        
+
+    }
+  
+}
